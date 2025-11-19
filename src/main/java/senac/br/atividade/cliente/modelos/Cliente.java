@@ -1,5 +1,6 @@
 package senac.br.atividade.cliente.modelos;
 
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 
 import java.util.Date;
@@ -11,19 +12,19 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @Column(nullable = false)
     private String documento;
 
-    @Column
+    @Column(nullable = false)
     private String nome;
 
-    @Column
+    @Column(nullable = false)
     private String sobrenome;
 
-    @Column
+    @Column(nullable = false)
     private Date dataNascimento;
 
-    @Column
+    @Column(nullable = false)
     private String email;
 
     public Long getId() {
