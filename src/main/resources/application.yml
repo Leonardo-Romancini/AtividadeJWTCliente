@@ -5,7 +5,7 @@ spring:
       ddl-auto: update
     show-sql: true
   datasource:
-    url: jdbc:postgresql://localhost:5432/cadastro
+    url: jdbc:postgresql://localhost:5432/cadastrocliente
     password: Sen@c2023
     username: postgres
     driverClassName: org.postgresql.Driver
